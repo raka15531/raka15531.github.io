@@ -1,0 +1,17 @@
+title: AI Insights
+description: Your guide to artificial intelligence and intelligent agents
+baseurl: ""
+url: "https://yourusername.github.io"
+github_username: yourusername
+disqus_shortname: yourdisqusshortname
+mailchimp_form_action: "https://you.usXX.list-manage.com/subscribe/post?u=XXXXX&amp;id=XXXXX"
+google_analytics: UA-XXXXX-X
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true

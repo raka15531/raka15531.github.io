@@ -1,0 +1,16 @@
+<div class="newsletter">
+  <div class="wrapper">
+    <h3>Subscribe to AI Insights</h3>
+    <p>Get the latest articles on AI and machine learning delivered to your inbox.</p>
+    
+    <form action="{{ site.mailchimp_form_action }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+      <div class="form-group">
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_{{ site.mailchimp_form_action | split: 'u=' | last | split: '&' | first }}" tabindex="-1" value="">
+        </div>
+        <button type="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</div>
