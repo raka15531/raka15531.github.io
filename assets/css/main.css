@@ -143,3 +143,29 @@ body {
     border-radius: 4px;
   }
 }
+/* Mobile-first responsive design */
+@media (max-width: 768px) {
+  .featured-articles {
+    grid-template-columns: 1fr;
+  }
+  
+  footer .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .hero {
+    padding: 3rem 1rem;
+  }
+}
+
+/* Tablet and desktop */
+@media (min-width: 769px) {
+  .featured-articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  footer .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
