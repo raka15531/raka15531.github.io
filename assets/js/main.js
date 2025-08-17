@@ -33,3 +33,25 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// Scroll animations
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animated');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.animate-on-scroll').forEach(el => {
+    observer.observe(el);
+  });
+
+  // Parallax effect for hero image
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    document.querySelector('.hero-image').style.transform = 
+      `translateY(${scrollY * 0.3}px)`;
+  });
+});
